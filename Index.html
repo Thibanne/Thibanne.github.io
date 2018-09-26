@@ -12,12 +12,15 @@
     <div id="top"></div>
   </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark sticky-top">
+    <a class="navbar-brand" href="#top">
+      <img src="img/icon-hearthstone.png" width="30" height="30" alt="hearthstone icon" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <a class="navbar-brand" href="#top">
-          <img src="img/icon-hearthstone.png" width="30" height="30" alt="hearthstone icon" />
-        </a>
         <li class="nav-item active">
           <a class="nav-link" href="#presentation">Présentation <span class="sr-only">(current)</span></a>
         </li>
@@ -35,7 +38,7 @@
     <!-- première ligne -->
     <div class="row">
       <!-- Colonne A -->
-      <div class="col-8">
+      <div class="col-lg-8 col-md-9 col-sm-12">
         <!-- Présentation -->
         <div id="presentation" class="container presentation">
           <div class="row">
@@ -43,7 +46,7 @@
           </div>
           <div class="row">
             <h1 class="title-text text-center">Présentation</h1>
-            <p>Présentation bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+            <p class="text-justify">Présentation bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
           </div>
         </div>
         <br />
@@ -51,12 +54,49 @@
           <!-- Compétences -->
           <div id="skills" class="container skills">
             <div class="row">
-              <img src="img/Fondheader.jpg" width="100%" height="60vh" alt="Image" />
+              <img src="img/Fondskills.jpg" width="100%" height="60vh" alt="Image" />
             </div>
             <div class="row">
               <h1 class="title-text text-center">Compétences</h1>
             </div>
-            <!-- ligne des logo -->
+            <!-- ligne des logo OS -->
+            <div class="row justify-content-md-center">
+              <div class="col-3">
+                <img src="img/Windows-logo.png" class="img-fluid" alt="Logo Windows" />
+              </div>
+              <div class="col-3">
+                <img src="img/Mac-logo.png" class="img-fluid" alt="Logo Mac(pomme)" />
+              </div>
+              <div class="col-3">
+                <img src="img/Linux-logo.png" class="img-fluid" alt="Logo Linux" />
+              </div>
+            </div>
+            <!-- ligne du niveau d'expérience OS/5 -->
+            <div class="row justify-content-md-center">
+              <div class="col-3">
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              </div>
+              <div class="col-3">
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              </div>
+              <div class="col-3">
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              </div>
+            </div>
+            <br />
+            <!-- ligne des logo language-->
             <div class="row">
               <div class="col-3">
                 <img src="img/HTML5-logo2.png" class="img-fluid" alt="Logo HTML5" />
@@ -71,45 +111,82 @@
                 <img src="img/JS-logo2.png" class="img-fluid" alt="Logo JS" />
               </div>
             </div>
-            <!-- ligne du niveau d'expérience /5 -->
+            <!-- ligne du niveau d'expérience language/5 -->
             <div class="row">
               <div class="col-3">
-                <img src="img/ico_full.png" height="30" width="30" alt="icone niveau" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
               </div>
               <div class="col-3">
-                <img src="img/ico_full.png" height="30" width="30" alt="icone niveau" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
               </div>
               <div class="col-3">
-                <img src="img/ico_full.png" height="30" width="30" alt="icone niveau" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
               </div>
               <div class="col-3">
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
-                <img src="img/ico_blank.png" height="30" width="30" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              </div>
+            </div>
+            <br />
+            <!-- ligne des logo Graph -->
+            <div class="row justify-content-md-center">
+              <div class="col-3">
+                <img src="img/PS-logo.png" class="img-fluid" alt="Logo Photoshop" />
+              </div>
+              <div class="col-3">
+                <img src="img/AI-logo.png" class="img-fluid" alt="Logo Illustrator" />
+              </div>
+              <div class="col-3">
+                <img src="img/ID-logo.png" class="img-fluid" alt="Logo InDesign" />
+              </div>
+            </div>
+            <!-- ligne du niveau d'expérience Graph/5 -->
+            <div class="row justify-content-md-center">
+              <div class="col-3">
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              </div>
+              <div class="col-3">
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              </div>
+              <div class="col-3">
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Colonne B -->
-      <div class="col-4">
+      <div class="col-lg-4 col-md-3 col-sm-12">
         <!-- Suivis -->
         <div class="container follow">
-          <marquee direction="up" loop="-1" scrollamount="2" class="follow">
+          <marquee direction="up" loop="-1" scrollamount="2" class="follow-text">
             <p class="portable-text p-2"><strong>2007/2009: Techicien informatique</strong>, maitenance sur le matériel informatique du secteur administratif, <i>Auchan</i> Montivilliers.</p>
             <p class="portable-text p-2"><strong>2009/2010: Webmaster</strong>, secteur informatique, travail, mise en place du projet, création et édification de la page web «Développement durable» sur le site du magasin, <i>Leroy Merlin</i> Montivilliers.</p>
             <p class="portable-text p-2"><strong>2011/2012: Vendeur</strong> rayon multimédia, <i>Boulanger</i> Montivillers.</p>
