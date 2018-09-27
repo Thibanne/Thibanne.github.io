@@ -69,6 +69,28 @@
 .contact {
   background-color: transparent;
 }
+.lg-f {
+  padding: auto;
+  background-image: url("../img/Fondicolanguage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lg-fi {
+  padding: auto;
+  background-color: #6d492e;
+}
+.graf-f {
+  padding: auto;
+  background-image: url("../img/Fondicograph.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.graf-fi {
+  padding: auto;
+  background-image: url("../img/Fondicograph2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .main-achievement {
   align-content: center;
   z-index: 1;
