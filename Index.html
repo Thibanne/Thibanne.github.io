@@ -2,11 +2,24 @@
 <html lang="fr">
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="Css/style3.css" type="text/css" />
+  <link rel="stylesheet" href="css/style3.css" type="text/css" />
   <meta charset="utf-8" />
   <title>Mon CV</title>
 </head>
 <body id=background-image>
+  <img src="img/Book/bat-autosur.jpg" style="display:none" alt="" />
+  <img src="img/Book/Jardiland.jpg" style="display:none" alt="" />
+  <img src="img/Book/Fiat-Doblo1.jpg" style="display:none" alt="" />
+  <img src="img/Book/Fiat-Doblo2.jpg" style="display:none" alt="" />
+  <img src="img/Book/Fiat-Doblo3.jpg" style="display:none" alt="" />
+  <img src="img/Book/Fiat-Doblo4.jpg" style="display:none" alt="" />
+  <img src="img/Book/SATED_maquette.jpg" style="display:none" alt="" />
+  <img src="img/Book/Air.jpg" style="display:none" alt="" />
+  <img src="img/Book/TTHPT-1.jpg" style="display:none" alt="" />
+  <img src="img/Book/TTHPT-2.jpg" style="display:none" alt="" />
+  <img src="img/Book/Compilation.png" style="display:none" alt="" />
+  <img src="img/Book/POKEBALL.jpg" style="display:none" alt="" />
+  <img src="img/Book/Pokeballthree.jpg" style="display:none" alt="" />
   <!-- Haut de page -->
   <div id=header-wrapper>
     <div id="top"></div>
@@ -25,10 +38,24 @@
           <a class="nav-link" href="#presentation">Présentation <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#skills">Compétence <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#skills">Compétences <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Autre <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#follow">Expériences <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#create">Book <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active d-md-none">
+          <a class="nav-link" href="#contact">Me contacter <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown nav-contact">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Me contacter </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#two"><img src="img/HF-adresse.jpg" alt="img adresse" /></a>
+            <a class="dropdown-item" href="#one"><img src="img/HF-mail.jpg" alt="img mail" /></a>
+            <a class="dropdown-item" href="#one"><img src="img/HF-tel.jpg" alt="img tel" /></a>
+          </div>
         </li>
       </ul>
     </div>
@@ -50,17 +77,21 @@
           </div>
         </div>
         <br />
-        <div>
+        <div id="skills">
           <!-- Compétences -->
-          <div id="skills" class="container skills">
+          <div class="container skills">
             <div class="row">
               <img src="img/Fondskills.jpg" width="100%" height="60vh" alt="Image" />
             </div>
             <div class="row">
-              <h1 class="title-text text-center">Compétences</h1>
+              <h1 id="skills" class="title-text text-center">Compétences</h1>
+            </div>
+            <div class="row">
+              <img src="img/FondOS.jpg" width="100%" height="auto" alt="Fond OS" />
             </div>
             <!-- ligne des logo OS -->
-            <div class="row justify-content-md-center">
+
+            <div class="row justify-content-md-center os-f">
               <div class="col-3">
                 <img src="img/Windows-logo.png" class="img-fluid" alt="Logo Windows" />
               </div>
@@ -71,31 +102,33 @@
                 <img src="img/Linux-logo.png" class="img-fluid" alt="Logo Linux" />
               </div>
             </div>
-            <!-- ligne du niveau d'expérience OS/5 -->
-            <div class="row justify-content-md-center">
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+            <div class="row justify-content-md-center os-fi">
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
             </div>
-            <br />
+
+            <div class="row">
+              <img src="img/Fondlanguage.jpeg" width="100%" height="auto" alt="Image" />
+            </div>
             <!-- ligne des logo language-->
             <div class="row">
               <div class="col-3">
@@ -113,36 +146,38 @@
             </div>
             <!-- ligne du niveau d'expérience language/5 -->
             <div class="row">
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
             </div>
-            <br />
+            <div class="row">
+              <img src="img/Fondgraph.jpg" width="100%" height="auto" alt="Image" />
+            </div>
             <!-- ligne des logo Graph -->
             <div class="row justify-content-md-center">
               <div class="col-3">
@@ -157,55 +192,184 @@
             </div>
             <!-- ligne du niveau d'expérience Graph/5 -->
             <div class="row justify-content-md-center">
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
-              <div class="col-3">
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_full.png" alt="icone niveau" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
-                <img class="icon-niv img-fluid" src="img/ico_blank.png" alt="icone blanche" />
+              <div class="col-3 ico-align">
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_full.png" alt="icone niveau" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
+                <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
             </div>
           </div>
         </div>
+        <br />
       </div>
       <!-- Colonne B -->
       <div class="col-lg-4 col-md-3 col-sm-12">
+        <!-- me contacter -->
+        <div class="container contact">
+          <div class="row">
+            <img id="contact" src="img/Fondcontact.png" class="main-achievement" alt="Fond contact" />
+          </div>
+          <div class="row">
+            <img src="img/HF-adresse.jpg" width="100%" height="60vh" alt="img adresse" />
+          </div>
+          <div class="row">
+            <img src="img/HF-mail.jpg" width="100%" height="60vh" alt="img mail" />
+          </div>
+          <div class="row">
+            <img src="img/HF-tel.jpg" width="100%" height="60vh" alt="img tel" />
+          </div>
+        </div>
         <!-- Suivis -->
         <div class="container follow">
-          <marquee direction="up" loop="-1" scrollamount="2" class="follow-text">
-            <p class="portable-text p-2"><strong>2007/2009: Techicien informatique</strong>, maitenance sur le matériel informatique du secteur administratif, <i>Auchan</i> Montivilliers.</p>
-            <p class="portable-text p-2"><strong>2009/2010: Webmaster</strong>, secteur informatique, travail, mise en place du projet, création et édification de la page web «Développement durable» sur le site du magasin, <i>Leroy Merlin</i> Montivilliers.</p>
-            <p class="portable-text p-2"><strong>2011/2012: Vendeur</strong> rayon multimédia, <i>Boulanger</i> Montivillers.</p>
-            <p class="portable-text p-2"><strong>2012/2013: Infographiste</strong> Entreprise <i>Publimage</i> Le Havre</p>
-            <p class="portable-text p-2"><strong>2013: Infographiste</strong> Entreprise <i>Publiplac</i> Le Havre</p>
-            <p class="portable-text p-2"><strong>2015/2016: Référent numérique</strong> Collège <i>Jules Vallès</i> Le Havre</p>
-          </marquee>
+          <p id="follow" class="portable-text p-2"><strong>2007/2009: Techicien informatique</strong>, maitenance sur le matériel informatique du secteur administratif, <i>Auchan</i> Montivilliers.</p>
+          <p class="portable-text p-2"><strong>2009/2010: Webmaster</strong>, secteur informatique, travail, mise en place du projet, création et édification de la page web «Développement durable» sur le site du magasin, <i>Leroy Merlin</i> Montivilliers.</p>
+          <p class="portable-text p-2"><strong>2011/2012: Vendeur</strong> rayon multimédia, <i>Boulanger</i> Montivillers.</p>
+          <p class="portable-text p-2"><strong>2012/2013: Infographiste</strong> Entreprise <i>Publimage</i> Le Havre</p>
+          <p class="portable-text p-2"><strong>2013: Infographiste</strong> Entreprise <i>Publiplac</i> Le Havre</p>
+          <p class="portable-text p-2"><strong>2015/2016: Référent numérique</strong> Collège <i>Jules Vallès</i> Le Havre</p>
+        </div>
+        <div class="container spare-time">
+          <div class="row">
+            <h1 id="skills" class="title-text text-center">Loisirs</h1>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-2">
+              <img class="img-fluid" src="img/ico-jdr.png" alt="icone niveau" />
+            </div>
+            <div class="col-2">
+              <img class="img-fluid" src="img/ico-game.png" alt="icone niveau" />
+            </div>
+            <div class="col-2">
+              <img class="img-fluid" src="img/ico-cine.png" alt="icone niveau" />
+            </div>
+            <div class="col-2">
+              <img class="img-fluid" src="img/ico-arc.png" alt="icone niveau" />
+            </div>
+            <div class="col-2">
+              <img class="img-fluid" src="img/ico-tennis.png" alt="icone niveau" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- fin première ligne -->
-  </div>
-</div>
-<div id=""></div>
-<div id=""></div>
+    <br />
+    <!-- seconde ligne -->
+    <div class="row">
+      <div id="create" class="container c-create">
+        <ul>
+          <li><img class="img-fluid book-p" src="img/Book/bat-autosur.jpg" alt="perso Autosur" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Jardiland.jpg" alt="perso Jardiland" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo1.jpg" alt="perso fiat ar" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo2.jpg" alt="perso fiat cd" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo3.jpg" alt="perso fiat av" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo4.jpg" alt="perso fiat cg" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/SATED_maquette.jpg" alt="perso sated" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Air.jpg" alt="perso air&co" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/TTHPT-1.jpg" alt="perso poker1" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/TTHPT-2.jpg" alt="perso poker2" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Compilation.png" alt="perso épice" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/POKEBALL.jpg" alt="perso pkb" /></li>
+          <li><img class="img-fluid book-p" src="img/Book/Pokeballthree.jpg" alt="perso pkb3" /></li>
+        </ul>
+      </div>
+    </div>
+    <!-- troisième ligne -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
+
+  <div id=""></div>
+  <div id=""></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+    var $carrousel = $('#create'), // on cible le bloc du carrousel
+    $img = $('#create img'), // on cible les images contenues dans le carrousel
+    indexImg = $img.length - 1, // on définit l'index du dernier élément
+    i = 0, // on initialise un compteur
+    $currentImg = $img.eq(i); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
+
+    $img.css('display', 'none'); // on cache les images
+    $currentImg.css('display', 'block'); // on affiche seulement l'image courante
+
+    $carrousel.append('<div class="controls"> <span class="prev">Precedent</span> <span class="next">Suivant</span> </div>');
+
+    $('.next').click(function(){ // image suivante
+
+      i++; // on incrémente le compteur
+
+      if( i <= indexImg ){
+        $img.css('display', 'none'); // on cache les images
+        $currentImg = $img.eq(i); // on définit la nouvelle image
+        $currentImg.css('display', 'block'); // puis on l'affiche
+      }
+      else{
+        i = indexImg;
+      }
+
+    });
+
+    $('.prev').click(function(){ // image précédente
+
+      i--; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
+
+      if( i >= 0 ){
+        $img.css('display', 'none');
+        $currentImg = $img.eq(i);
+        $currentImg.css('display', 'block');
+      }
+      else{
+        i = 0;
+      }
+
+    });
+
+    function slideImg(){
+      setTimeout(function(){ // on utilise une fonction anonyme
+
+        if(i < indexImg){ // si le compteur est inférieur au dernier index
+          i++; // on l'incrémente
+        }
+        else{ // sinon, on le remet à 0 (première image)
+          i = 0;
+        }
+
+        $img.css('display', 'none');
+
+        $currentImg = $img.eq(i);
+        $currentImg.css('display', 'block');
+
+        slideImg(); // on oublie pas de relancer la fonction à la fin
+
+      }, 7000); // on définit l'intervalle à 7000 millisecondes (7s)
+    }
+
+    slideImg(); // enfin, on lance la fonction une première fois
+
+  });
+
+  </script>
 
 </body>
 </html>
