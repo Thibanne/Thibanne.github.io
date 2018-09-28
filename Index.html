@@ -3,6 +3,9 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style3.css" type="text/css" />
+  <link rel="stylesheet" href="assets/owlCarousel/assets/owl.carousel.css" type="text/css" />
+  <link rel="stylesheet" href="assets/owlCarousel/assets/owl.theme.default.css" type="text/css" />
+
   <meta charset="utf-8" />
   <title>Mon CV</title>
 </head>
@@ -27,6 +30,9 @@
   <!-- Haut de page -->
   <div id=header-wrapper>
     <div id="top"></div>
+    <div class="titlehead pt-2">
+      <img src="img/titleheader.png" width="35%" height="35%" alt="Titre" />
+    </div>
   </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark sticky-top">
@@ -38,27 +44,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item active aligner">
           <a class="nav-link" href="#presentation">Présentation <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item active aligner">
           <a class="nav-link" href="#skills">Compétences <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item active aligner">
           <a class="nav-link" href="#follow">Expériences <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item active aligner">
           <a class="nav-link" href="#create">Book <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active d-md-none">
-          <a class="nav-link" href="#contact">Me contacter <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item dropdown nav-contact">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Me contacter </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#two"><img src="img/HF-adresse.jpg" alt="img adresse" /></a>
-            <a class="dropdown-item" href="#one"><img src="img/HF-mail.jpg" alt="img mail" /></a>
-            <a class="dropdown-item" href="#one"><img src="img/HF-tel.jpg" alt="img tel" /></a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Me contacter <img src="img/icocontact.png" alt="icon contact" height="30" width="30" /></a>
+          <div class="dropdown-menu dropground">
+            <div class="container dropcont">
+              <a class="dropdown-item" href="#two"><img src="img/HF-adresse.jpg" alt="img adresse" /></a>
+              <a class="dropdown-item" href="#one"><img src="img/HF-mail.jpg" alt="img mail" /></a>
+              <a class="dropdown-item" href="#one"><img src="img/HF-tel.jpg" alt="img tel" /></a>
+            </div>
           </div>
         </li>
       </ul>
@@ -76,8 +81,10 @@
             <img src="img/Fondpresentation.jpg" width="100%" height="60vh" alt="Fond présentation" />
           </div>
           <div class="row">
-            <h1 class="title-text text-center">Présentation</h1>
-            <p class="text-justify">Mordu d'informatique depuis l'adolescence et désirant avoir plusieurs cordes à mon arc (étant archer), Aprés m'ëtre formé dans la maintenance informatique, puis l'infographie, je suis actuellement une formation de développeur web au campus La Manu Le Havre</p>
+            <div class="text-pr">
+              <h1 class="title-text text-center">Présentation</h1>
+              <p class="text-justify">Mordu d'informatique depuis l'adolescence et désirant avoir plusieurs cordes à mon arc (étant archer), Aprés m'ëtre formé dans la maintenance informatique, puis l'infographie, je suis actuellement une formation de développeur web au campus La Manu Le Havre</p>
+            </div>
           </div>
         </div>
         <br />
@@ -85,16 +92,12 @@
           <!-- Compétences -->
           <div class="container skills">
             <div class="row">
-              <img src="img/Fondskills.jpg" width="100%" height="60vh" alt="Image" />
-            </div>
-            <div class="row">
-              <h1 id="skills" class="title-text text-center">Compétences</h1>
+              <img src="img/Fondskills.jpg" width="100%" height="auto" alt="fond compétence" />
             </div>
             <div class="row">
               <img src="img/FondOS.jpg" width="100%" height="auto" alt="Fond OS" />
             </div>
             <!-- ligne des logo OS -->
-
             <div class="row justify-content-md-center os-f">
               <div class="col-3">
                 <img src="img/Windows-logo.png" class="img-fluid" alt="Logo Windows" />
@@ -129,11 +132,10 @@
                 <img class="img-fluid icon-niv" src="img/ico_blank.png" alt="icone blanche" />
               </div>
             </div>
-
             <div class="row">
-              <img src="img/Fondlanguage.jpeg" width="100%" height="auto" alt="Image" />
+              <img src="img/Fondlangage.jpeg" width="100%" height="auto" alt="fond langage" />
             </div>
-            <!-- ligne des logo language-->
+            <!-- ligne des logo langage-->
             <div class="row lg-f">
               <div class="col-3">
                 <img src="img/HTML5-logo2.png" class="img-fluid" alt="Logo HTML5" />
@@ -180,7 +182,7 @@
               </div>
             </div>
             <div class="row">
-              <img src="img/Fondgraph.jpg" width="100%" height="auto" alt="Image" />
+              <img src="img/Fondgraph.jpg" width="100%" height="auto" alt="fond graph" />
             </div>
             <!-- ligne des logo Graph -->
             <div class="row justify-content-md-center graf-f">
@@ -233,7 +235,7 @@
             <img src="img/HF-adresse.jpg" width="100%" height="60vh" alt="img adresse" />
           </div>
           <div class="row">
-            <img src="img/HF-mail.jpg" width="100%" height="60vh" alt="img mail" />
+            <img src="img/HF-mail2.jpg" width="100%" height="60vh" alt="img mail" />
           </div>
           <div class="row">
             <img src="img/HF-tel.jpg" width="100%" height="60vh" alt="img tel" />
@@ -241,33 +243,25 @@
         </div>
         <!-- Suivis -->
         <div class="container follow">
-          <p id="follow" class="portable-text p-2"><strong>2007/2009: Techicien informatique</strong>, maitenance sur le matériel informatique du secteur administratif, <i>Auchan</i> Montivilliers.</p>
-          <p class="portable-text p-2"><strong>2009/2010: Webmaster</strong>, secteur informatique, travail, mise en place du projet, création et édification de la page web «Développement durable» sur le site du magasin, <i>Leroy Merlin</i> Montivilliers.</p>
-          <p class="portable-text p-2"><strong>2011/2012: Vendeur</strong> rayon multimédia, <i>Boulanger</i> Montivillers.</p>
-          <p class="portable-text p-2"><strong>2012/2013: Infographiste</strong> Entreprise <i>Publimage</i> Le Havre</p>
-          <p class="portable-text p-2"><strong>2013: Infographiste</strong> Entreprise <i>Publiplac</i> Le Havre</p>
-          <p class="portable-text p-2"><strong>2015/2016: Référent numérique</strong> Collège <i>Jules Vallès</i> Le Havre</p>
-        </div>
-        <div class="container spare-time">
+          <div class="row fl-xp">
+            <img src="img/FondXP.png" width="100%" height="40vh" alt="img tel" />
+          </div>
           <div class="row">
-            <h1 id="skills" class="title-text text-center">Loisirs</h1>
+            <p id="follow" class="portable-text p-2"><strong>2007/2009: Techicien informatique</strong>, maitenance sur le matériel informatique du secteur administratif, <i>Auchan</i> Montivilliers.</p>
+            <p class="portable-text p-2"><strong>2009/2010: Webmaster</strong>, secteur informatique, travail, mise en place du projet, création et édification de la page web «Développement durable» sur le site du magasin, <i>Leroy Merlin</i> Montivilliers.</p>
+            <p class="portable-text p-2"><strong>2011/2012: Vendeur</strong> rayon multimédia, <i>Boulanger</i> Montivillers.</p>
+            <p class="portable-text p-2"><strong>2012/2013: Infographiste</strong> Entreprise <i>Publimage</i> Le Havre</p>
+            <p class="portable-text p-2"><strong>2013: Infographiste</strong> Entreprise <i>Publiplac</i> Le Havre</p>
+            <p class="portable-text p-2"><strong>2015/2016: Référent numérique</strong> Collège <i>Jules Vallès</i> Le Havre</p>
+          </div>
+        </div>
+        <!-- Loisir -->
+        <div class="container spare-time">
+          <div class="row justify-content-md-center">
+            <img src="img/Fondloisir.jpg" width="100%" height="auto" alt="fond loisir" />
           </div>
           <div class="row justify-content-md-center">
-            <div class="col-2">
-              <img class="img-fluid" src="img/ico-jdr.png" alt="icone niveau" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="img/ico-game.png" alt="icone niveau" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="img/ico-cine.png" alt="icone niveau" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="img/ico-arc.png" alt="icone niveau" />
-            </div>
-            <div class="col-2">
-              <img class="img-fluid" src="img/ico-tennis.png" alt="icone niveau" />
-            </div>
+            <img class="img-fluid" src="img/loisir.jpg" alt="icone tir à l'arc" />
           </div>
         </div>
       </div>
@@ -277,26 +271,31 @@
     <!-- seconde ligne -->
     <div class="row">
       <div id="create" class="container c-create">
-        <ul>
-          <li><img class="img-fluid book-p" src="img/Book/bat-autosur.jpg" alt="perso Autosur" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Jardiland.jpg" alt="perso Jardiland" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo1.jpg" alt="perso fiat ar" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo2.jpg" alt="perso fiat cd" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo3.jpg" alt="perso fiat av" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Fiat-Doblo4.jpg" alt="perso fiat cg" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/SATED_maquette.jpg" alt="perso sated" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Air.jpg" alt="perso air&co" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/TTHPT-1.jpg" alt="perso poker1" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/TTHPT-2.jpg" alt="perso poker2" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Compilation.png" alt="perso épice" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/POKEBALL.jpg" alt="perso pkb" /></li>
-          <li><img class="img-fluid book-p" src="img/Book/Pokeballthree.jpg" alt="perso pkb3" /></li>
-        </ul>
+        <div id="scroller" style="width: 100%; height: 250px; margin: 0 auto;">
+          <div class="innerScrollArea">
+            <ul>
+              <li><img src="img/Book/bat-autosur.jpg" width="353" height="250" alt="perso Autosur" /></li>
+              <li><img src="img/Book/Jardiland.jpg" width="1250" height="250" alt="perso Jardiland" /></li>
+              <li><img src="img/Book/Fiat-Doblo1.jpg" width="256" height="250" alt="perso fiat ar" /></li>
+              <li><img src="img/Book/Fiat-Doblo2.jpg" width="586" height="250" alt="perso fiat cd" /></li>
+              <li><img src="img/Book/Fiat-Doblo3.jpg" width="313" height="250" alt="perso fiat av" /></li>
+              <li><img src="img/Book/Fiat-Doblo4.jpg" width="571" height="250" alt="perso fiat cg" /></li>
+              <li><img src="img/Book/SATED_maquette.jpg" width="567" height="250" alt="perso sated" /></li>
+              <li><img src="img/Book/Air.jpg" width="105" height="250" alt="perso air&co" /></li>
+              <li><img src="img/Book/TTHPT-1.jpg" width="353" height="250" alt="perso poker1" /></li>
+              <li><img src="img/Book/TTHPT-2.jpg" width="353" height="250" alt="perso poker2" /></li>
+              <li><img src="img/Book/Compilation.png" width="212" height="250" alt="perso épice" /></li>
+              <li><img src="img/Book/POKEBALL.jpg" width="393" height="250" alt="perso pkb" /></li>
+              <li><img src="img/Book/Pokeballthree.jpg" width="320" height="250" alt="perso pkb3" /></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- troisième ligne -->
-
   </div>
+  <!-- troisième ligne -->
+
+
 
   <div id=""></div>
   <div id=""></div>
@@ -304,75 +303,50 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
   <script type="text/javascript">
-  $(document).ready(function(){
+  $(function(){
+    var scroller = $('#scroller div.innerScrollArea');
+    var scrollerContent = scroller.children('ul');
+    scrollerContent.children().clone().appendTo(scrollerContent);
+    var curX = 0;
+    scrollerContent.children().each(function(){
+      var $this = $(this);
+      $this.css('left', curX);
+      curX += $this.outerWidth(true);
+    });
+    var fullW = curX / 2;
+    var viewportW = scroller.width();
 
-    var $carrousel = $('#create'), // on cible le bloc du carrousel
-    $img = $('#create img'), // on cible les images contenues dans le carrousel
-    indexImg = $img.length - 1, // on définit l'index du dernier élément
-    i = 0, // on initialise un compteur
-    $currentImg = $img.eq(i); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
+    // Scrolling speed management
+    var controller = {curSpeed:0, fullSpeed:2};
+    var $controller = $(controller);
+    var tweenToNewSpeed = function(newSpeed, duration)
+    {
+      if (duration === undefined)
+      duration = 600;
+      $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+    };
 
-    $img.css('display', 'none'); // on cache les images
-    $currentImg.css('display', 'block'); // on affiche seulement l'image courante
-
-    $carrousel.append('<div class="controls"> <span class="prev">Precedent</span> <span class="next">Suivant</span> </div>');
-
-    $('.next').click(function(){ // image suivante
-
-      i++; // on incrémente le compteur
-
-      if( i <= indexImg ){
-        $img.css('display', 'none'); // on cache les images
-        $currentImg = $img.eq(i); // on définit la nouvelle image
-        $currentImg.css('display', 'block'); // puis on l'affiche
-      }
-      else{
-        i = indexImg;
-      }
-
+    // Pause on hover
+    scroller.hover(function(){
+      tweenToNewSpeed(0);
+    }, function(){
+      tweenToNewSpeed(controller.fullSpeed);
     });
 
-    $('.prev').click(function(){ // image précédente
-
-      i--; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
-
-      if( i >= 0 ){
-        $img.css('display', 'none');
-        $currentImg = $img.eq(i);
-        $currentImg.css('display', 'block');
-      }
-      else{
-        i = 0;
-      }
-
-    });
-
-    function slideImg(){
-      setTimeout(function(){ // on utilise une fonction anonyme
-
-        if(i < indexImg){ // si le compteur est inférieur au dernier index
-          i++; // on l'incrémente
-        }
-        else{ // sinon, on le remet à 0 (première image)
-          i = 0;
-        }
-
-        $img.css('display', 'none');
-
-        $currentImg = $img.eq(i);
-        $currentImg.css('display', 'block');
-
-        slideImg(); // on oublie pas de relancer la fonction à la fin
-
-      }, 7000); // on définit l'intervalle à 7000 millisecondes (7s)
-    }
-
-    slideImg(); // enfin, on lance la fonction une première fois
-
+    // Scrolling management; start the automatical scrolling
+    var doScroll = function()
+    {
+      var curX = scroller.scrollLeft();
+      var newX = curX + controller.curSpeed;
+      if (newX > fullW*2 - viewportW)
+      newX -= fullW;
+      scroller.scrollLeft(newX);
+    };
+    setInterval(doScroll, 20);
+    tweenToNewSpeed(controller.fullSpeed);
   });
-
   </script>
 
 </body>
